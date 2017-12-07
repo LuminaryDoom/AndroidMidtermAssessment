@@ -44,14 +44,14 @@ public class LoginActivity extends AppCompatActivity {
                     editor.putString("pass", pass);
                     editor.putBoolean("isChecked", saveDetails.isChecked());
                     editor.commit();
-                }else {
+                } else {
                     editor.putBoolean("isChecked", saveDetails.isChecked());
                     editor.commit();
                 }
 
                 if (email.getText().toString() == "user@aol.com" && password.getText().toString() == "password1234") {
-                    Intent intent = new Intent(LoginActivity.this , ListActivity.class);
-                    intent.putExtra("UserEmail",email.getText().toString());
+                    Intent intent = new Intent(LoginActivity.this, ListActivity.class);
+                    intent.putExtra("UserEmail", email.getText().toString());
                     startActivity(intent);
                 }
             }
