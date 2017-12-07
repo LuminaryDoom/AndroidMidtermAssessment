@@ -53,7 +53,7 @@ public class LoopActivity extends AppCompatActivity {
         protected void onPostExecute(Integer result) {
             super.onPostExecute(result);
             centerText.setText("Loops completed:" + result);
-            Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+            Intent intent = new Intent(LoopActivity.this, LoginActivity.class);
             startActivity(intent);
 
         }
